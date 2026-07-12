@@ -49,9 +49,9 @@ if predict_btn:
         try:
             with open('model.pkl', 'rb') as f:
                 model = pickle.load(f)
-            with open('scale.pkl', 'rb') as f:
+            with open('scaler.pkl', 'rb') as f:
                 scaler = pickle.load(f)
-            with open('column.pkl', 'rb') as f:
+            with open('columns.pkl', 'rb') as f:
                 model_columns = pickle.load(f)
         except FileNotFoundError as fnf_error:
             st.error(f"❌ **Model Files Missing!** `model.pickle`, `scale.pickle`, or `column.pickle` not found in the root folder.")
