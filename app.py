@@ -47,11 +47,11 @@ if predict_btn:
 
         # Step 2: Try loading assets / pickle files
         try:
-            with open('model.pickle', 'rb') as f:
+            with open('model.pkl', 'rb') as f:
                 model = pickle.load(f)
-            with open('scale.pickle', 'rb') as f:
+            with open('scale.pkl', 'rb') as f:
                 scaler = pickle.load(f)
-            with open('column.pickle', 'rb') as f:
+            with open('column.pkl', 'rb') as f:
                 model_columns = pickle.load(f)
         except FileNotFoundError as fnf_error:
             st.error(f"❌ **Model Files Missing!** `model.pickle`, `scale.pickle`, or `column.pickle` not found in the root folder.")
