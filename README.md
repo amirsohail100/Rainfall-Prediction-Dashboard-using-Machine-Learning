@@ -18,10 +18,15 @@ A production-grade, highly intuitive **Streamlit** web application that predicts
 
 ---
 
+![Application Interface](UI.png)
+
+---
+
 ## 📁 Repository Structure
 
 ```text
 ├── app.py              # Main Streamlit Application UI Code
+├── UI.png              # Screenshot of the Application Interface
 ├── model.pickle        # Trained Logistic Regression Model Weights
 ├── scale.pickle        # Fitted StandardScaler Instance
 ├── column.pickle       # Reference list of verified training columns
