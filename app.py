@@ -48,8 +48,8 @@ if predict_btn:
         # Step 2: Try loading assets / pickle files
         try:
             import joblib
-            model = joblib.load('model.pkl')
-            scaler = joblib.load('scaler.pkl')
+            model = joblib.load('models/model.pkl')
+            scaler = joblib.load('models/scaler.pkl')
             model_columns = joblib.load('columns.pkl')
         except FileNotFoundError as fnf_error:
             st.error(f"❌ **Model Files Missing!** `model.pickle`, `scale.pickle`, or `column.pickle` not found in the root folder.")
