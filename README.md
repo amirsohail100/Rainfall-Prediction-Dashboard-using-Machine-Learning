@@ -18,7 +18,7 @@ A production-grade, highly intuitive **Streamlit** web application that predicts
 
 ---
 
-![Application Interface](UI.png)
+![Application Interface](assets\UI.png)
 
 ---
 
